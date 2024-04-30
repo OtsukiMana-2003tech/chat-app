@@ -1,0 +1,55 @@
+/******************************************** 
+ フロント画面のCSS
+*********************************************/
+
+.wrapper{
+  display: flex;
+}
+
+/******************************************** 
+ フロント画面のサイドバー
+*********************************************/
+
+.side_bar{
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+}
+
+.side_header{
+  height: 100px;
+  padding: 0 20px;
+}
+
+.side_rooms{
+  background-color: #2f3e51;
+  height: calc(100Vh - 100px);
+  padding: 0 20px;
+}
+
+/******************************************** 
+ チャット画面
+*********************************************/
+
+.main_chat{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+}
+
+.chat_header{
+  height: 100px;
+  padding: 0 40px;
+}
+
+.chat_content{
+  background-color: #fafafa;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+}
+
+.chat_form{
+  background-color: #dddddd;
+  height: 90px;
+  padding: 20px 0;
+}
