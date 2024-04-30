@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+ /*paddingやborderの設定によるレイアウト崩れを防ぐ*/
+*{
+  box-sizing: border-box;
+}
