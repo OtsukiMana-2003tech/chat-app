@@ -2,7 +2,7 @@
   <div class = "user_name">
     <!--テスト表示用の仮データ-->
     <a href = "#" class = "name_link">
-      Tom
+      <%= link_to current_user.name, edit_user_path(current_user) %>
     </a>
   </div>
   <div class = "chat_btn">
