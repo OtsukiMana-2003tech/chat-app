@@ -7,15 +7,12 @@
   </div>
   <div class = "chat_btn">
     <%= link_to "チャットを作成する", new_room_path , class: 'btn_link' %>
-    <%# <a href = "#" class = "btn_link">
-      チャットを作成する
-    </a> %>
   </div>
 </div>
 <div class = "side_rooms">
   <% current_user.rooms.each do |room| %>
     <div class = "room_names">
-      <a href = "#"><%= room.name %></a>
+      <%= link_to room.name, room_messages_path(room) %>
     </div>
   <% end %>
 </div>
