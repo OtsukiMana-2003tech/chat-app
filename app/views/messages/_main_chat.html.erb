@@ -13,36 +13,7 @@
   </div>
 </div>
 <div class = "chat_content">
-  <div class = "content_index">
-    <div class = "content_upper">
-      <div class = "content_name">
-        Tom
-      </div>
-      <div class = "content_date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class = "content_lower">
-      <div class = "content_text">
-        おはよう
-      </div>
-    </div>
-  </div>
-  <div class = "content_index">
-    <div class = "content_upper">
-      <div class = "content_name">
-        Sim
-      </div>
-      <div class = "content_date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class = "content_lower">
-      <div class = "content_text">
-        おはよう
-      </div>
-    </div>
-  </div>
+  <%= render partical: 'message', collection: @messages %>
 </div>
 <div class = "chat_form">
   <%= form_with model: [@room, @message], html: {class: "form_content"}, local: true do |f|%>
